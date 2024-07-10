@@ -1,55 +1,52 @@
 // length
+var arr = [1, 2, 3, 4, 5];
 
-var nome = 'Weslley';
+console.log(arr.length);
 
-console.log(nome.length);
+// push (adiciona ao final)
+arr.push(6);
+arr.push('teste');
 
-// indexOf
+console.log(arr);
 
-var frase = 'o rato roeu a roupa do rei de Roma';
+// pop (remove o último)
 
-console.log(frase.indexOf('roeu'));
+arr.pop();
 
-// slice
+console.log(arr);
 
-var roeu = frase.slice(7, 11);
+// unshift (adiciona no início do arrey)
 
-console.log(roeu);
+arr.unshift(0);
+arr.unshift('teste 2');
 
-//replace
+console.log(arr);
 
-var novaFrase = frase.replace('roeu', 'teste');
+// shift (remove primeiro)
+arr.shift();
 
-console.log(novaFrase);
+console.log(arr);
 
-//toLowerCase e toUpperCase
+// acessar o último elemento
+console.log(arr[arr.length - 1]);
 
-var frase = 'Esta é a frase que vamos manipular';
+//splice (adicionar elementos no meio OU remover algum elemento mo meio)
 
-var fraseCaixaAlta = frase.toLocaleUpperCase();
+arr.splice(2, 0, 999);
 
-console.log(fraseCaixaAlta);
-console.log(fraseCaixaAlta.toLowerCase());
+console.log(arr);
 
+arr.splice(4, 1);
+console.log(arr);
 
-// trim (Remove os espaços)
-var nome = '      Weslley    ';
+//indexOf
 
-var nomeTrim = nome.trim();
+console.log(arr.indexOf(5));
 
-console.log(nome);;
-console.log(nomeTrim);
+// join (transformar arrey em uma string)
 
+var arr2 = ['Salve', 'Maria'];
+console.log(arr2.join(' '));
 
-// split (Cria um arrey com o conteúdo, o parâmetro da função será o que dividirá o conteúdo)
-
-console.log(frase.split(' '));
-
-// lastIndexOf (Puxa o indice da última letra da string)
-
-var frase2 = 'este teste numero dois para teste de função';
-
-console.log(frase2.indexOf('teste'));
-
-console.log(frase2.lastIndexOf('teste'));
-
+// reverse
+console.log(arr.reverse());
