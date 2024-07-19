@@ -17,6 +17,7 @@ body{
 
 #tasks-header {
     margin-top: 40px;
+    width: 90%;
 }
 
 #add-task-form {
@@ -53,7 +54,8 @@ body{
 
 /*tasks container*/
 #tasks-list-container{
-    padding-left: 30px;
+    padding-left: 25px;
+    width: 90%;
 }
 
 #task-list {
